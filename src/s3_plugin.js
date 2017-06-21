@@ -212,7 +212,7 @@ module.exports = class S3Plugin {
     if (this.isConnected)
       return
 
-    this.client = s3.createClient(s3Client: new AWS.S3(this.clientConfig.s3Options));
+    this.client = new AWS.S3();
     this.isConnected = true
   }
 
